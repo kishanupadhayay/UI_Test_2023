@@ -1,0 +1,39 @@
+.header {
+  padding: 22px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  .logo {
+    font: normal normal bold 28px/23px dinCondensed;
+    margin-right: 31px;
+  }
+
+  .menuItems1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      padding: 0 24px;
+      font: normal normal bold 18px dinCondensed;
+      letter-spacing: 0.18px;
+      color: #333333;
+    }
+  }
+  .menuItems2 {
+    list-style-type: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    li {
+      display: inline;
+      padding-left: 48px;
+      font: normal normal bold 18px dinCondensed;
+      letter-spacing: 0.18px;
+      color: #333333;
+    }
+  }
+}

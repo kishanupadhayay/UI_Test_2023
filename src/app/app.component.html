@@ -1,3 +1,6 @@
-<app-header>></app-header>
-<app-main></app-main>
-<app-footer></app-footer>
+<section (scroll)="scrollHandler($event)" >
+  <app-header>></app-header>
+  <app-main></app-main>
+  <app-fixed-sidebar></app-fixed-sidebar>
+  <app-footer></app-footer>
+</section>

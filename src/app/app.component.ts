@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'UI_Test';
+  @HostListener('window:scroll', ['$event']) 
+    scrollHandler(event: any) {
+      // console.debug("Scroll Event", event);
+    }
+
+  // onScrollPage(event: any) {
+  //  console.log('scroll', event);
+  // }
 }

@@ -1,0 +1,12 @@
+<div class="fixed-sidebar">
+    <div class="menu-counter">
+        <div *ngFor="let l of pageActive, index as i" class="line" [class.lineActive]="pageActive[i] === 1">
+            <p> {{pageActive[i] === 1 ? '0' + (i+1) : '' }}</p>
+        </div>
+        <!-- <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div> -->
+    </div>
+     <div class="request_info"><p>REQUEST INFO</p></div>
+</div>

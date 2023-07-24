@@ -1,17 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: dinCondensed;
-  src: url("/assets/font/DIN_Condensed_Bold.ttf") format("opentype");
+  src: url("./assets/fonts/DIN_Condensed_Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: gillSans;
-  src: url("/assets/font/GillSans.ttc") format("opentype");
+  src: url("./assets/fonts/GillSans.ttc") format("truetype");
 }
 
 body {
-  font-family: "gillSans";
+  // font-family: "gillSans";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+h1, p{
+  margin-bottom: 0;
+}
+
+.ic{
+    height: 17px !important;
+    width: 17px !important;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ic-facebook{
+  background-image: url('assets/images/fbIcon.png');
+}
+
+.ic-insta{
+  background-image: url('assets/images/instaIcon.png');
+}
+
+.ic-twitter{
+  background-image: url('assets/images/twitterIcon.png');
+}
+
+.ic-linkedIn{
+  background-image: url('assets/images/linkedinIcon.png');
+}
+
+.ic-browser {
+  background: url('assets/images/Dribbble-icon.png');
 }
