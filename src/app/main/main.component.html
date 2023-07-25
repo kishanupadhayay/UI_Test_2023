@@ -184,7 +184,10 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-3" [ngClass]="counter === 3 ? 'slideUpSection' : ''">
+        <div
+          class="col-3 starters"
+          [ngClass]="counter === 3 ? 'slideUpSection' : ''"
+        >
           <div>
             <h1 class="heading">STARTERS</h1>
             <div class="items">
@@ -212,7 +215,10 @@
           </div>
         </div>
 
-        <div class="col-3" [ngClass]="counter === 3 ? 'slideDownSection' : ''">
+        <div
+          class="col-3 maincourses"
+          [ngClass]="counter === 3 ? 'slideDownSection' : ''"
+        >
           <div class="mt-auto">
             <h1 class="heading hidden-heading">MAIN COURSES</h1>
             <div class="items">
@@ -233,7 +239,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3" [ngClass]="counter === 3 ? 'slideUpSection' : ''">
+        <div
+          class="col-3 sides"
+          [ngClass]="counter === 3 ? 'slideUpSection' : ''"
+        >
           <div class="margin-top-100">
             <h1 class="heading hidden-heading">SIDES</h1>
             <div class="items">
@@ -252,7 +261,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3" [ngClass]="counter === 3 ? 'slideDownSection' : ''">
+        <div
+          class="col-3 desserts"
+          [ngClass]="counter === 3 ? 'slideDownSection' : ''"
+        >
           <div class="mt-5">
             <h1 class="heading hidden-heading">DESSERTS</h1>
             <div class="items">
