@@ -535,12 +535,12 @@
 
 .starters,
 .sides {
-  transform: translateY(500px);
+  transform: translateY(-200px);
 }
 
 .maincourses,
 .desserts {
-  transform: translateY(-200px);
+  transform: translateY(200px);
 }
 
 .frame-active {
@@ -580,7 +580,7 @@
 
 @keyframes slideUpFromBottom {
   from {
-    transform: translateY(500px);
+    transform: translateY(200px);
   }
   to {
     transform: translateY(0px);
