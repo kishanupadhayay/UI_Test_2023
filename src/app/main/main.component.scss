@@ -537,6 +537,12 @@
 .sides {
   transform: translateY(500px);
 }
+
+.maincourses,
+.desserts {
+  transform: translateY(-200px);
+}
+
 .frame-active {
   animation-name: slideUp;
   animation-duration: 1s;
@@ -558,15 +564,17 @@
 .slideDownSection {
   animation-name: slideBottomFromUp;
   animation-duration: 1s;
-  // animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slideBottomFromUp {
   from {
     transform: translateY(-200px);
+    z-index: 0;
   }
   to {
     transform: translateY(0px);
+    z-index: 1;
   }
 }
 
@@ -586,4 +594,8 @@
   to {
     transform: translateY(0px);
   }
+}
+
+.dnone {
+  display: none !important;
 }
