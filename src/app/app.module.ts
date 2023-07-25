@@ -10,6 +10,10 @@ import { MainComponent } from './main/main.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FixedSidebarComponent } from './fixed-sidebar/fixed-sidebar.component';
 import { EnterTheViewportNotifierDirective } from './is-visible.directive';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CommunityComponent } from './community/community.component';
+import { MenuComponent } from './menu/menu.component';
+import { FormComponent } from './form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +22,10 @@ import { EnterTheViewportNotifierDirective } from './is-visible.directive';
     MainComponent,
     FixedSidebarComponent,
     EnterTheViewportNotifierDirective,
+    DashboardComponent,
+    CommunityComponent,
+    MenuComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,

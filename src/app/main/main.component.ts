@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DemoService } from '../demo.service';
+import { DemoService } from '../service/demo.service';
 
 @Component({
   selector: 'app-main',
@@ -7,20 +7,20 @@ import { DemoService } from '../demo.service';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  constructor(private demo: DemoService) {}
-  ngOnInit(): void {}
+  constructor(private demo: DemoService) { }
+  ngOnInit(): void { }
   counter = 1;
-  firstLoad: Boolean = true;
   check(value: any, targetString: String) {
-    if (value && targetString === 'hero') {
+    if (value && targetString === 'dashboard') {
       this.counter = 1;
     } else if (value && targetString === 'community') {
       this.counter = 2;
-      this.firstLoad = true;
     } else if (value && targetString === 'menu') {
       this.counter = 3;
     }
-    this.firstLoad = false;
+    else if (value && targetString === 'form') {
+      this.counter = 4;
+    }
 
     this.demo.behaviorSubject.next(this.counter);
   }
