@@ -1,14 +1,14 @@
 .fixed-sidebar {
-    width: 100%;
-    display: flex;
-    background-color: transparent;
-    height: 120px;
-    justify-content: center;
-    position: fixed;
-    z-index: 20;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  height: 120px;
+  justify-content: center;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   .menu-counter {
     margin: auto 27px;
@@ -16,25 +16,28 @@
       width: 15px;
       margin-bottom: 20px;
       height: 1.5px;
-      background: #333333; 
+      background: #333333;
+      animation-name: decrease;
+      animation-duration: 1s;
       &:last-child {
         margin-bottom: 0;
       }
     }
 
     .lineActive {
-        width: 25px !important;
-        position: relative;
-
-        p{
-            position: absolute;
-            left: 2px;
-            top: -12px;
-            font-family: "dinCondensed";
-            font-size: 18px;
-            font-weight: bold;
-            font-style: normal;
-        }
+      width: 25px !important;
+      position: relative;
+      animation-name: increase;
+      animation-duration: 1s;
+      p {
+        position: absolute;
+        left: 2px;
+        top: -12px;
+        font-family: "dinCondensed";
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+      }
     }
   }
 
@@ -51,5 +54,23 @@
       letter-spacing: 0.18px;
       color: #333333;
     }
+  }
+}
+
+@keyframes decrease {
+  from {
+    width: 25px;
+  }
+  to {
+    width: 15px;
+  }
+}
+
+@keyframes increase {
+  from {
+    width: 15px;
+  }
+  to {
+    width: 25px;
   }
 }

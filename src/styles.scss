@@ -30,6 +30,13 @@ h1, p{
     background-repeat: no-repeat;
     background-size: contain;
 }
+.ic-sm{
+  height: 12px !important;
+  width: 13px !important;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .ic-facebook{
   background-image: url('assets/images/fbIcon.png');
 }
@@ -48,4 +55,11 @@ h1, p{
 
 .ic-browser {
   background: url('assets/images/Dribbble-icon.png');
+}
+
+.ic-message{
+  background-image: url('assets/images/messageIcon.png');
+}
+.ic-heart{
+  background-image: url('assets/images/heartIcon.png');
 }
